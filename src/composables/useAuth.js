@@ -16,9 +16,9 @@ export const useAuth = () => {
 
     const logout = async () => {
         await signOut(auth)
-        router.push({ name: 'Home' })
+        router.push({ name: 'Home'})
     }
 
-    return { isAuthenticated, user, login, logout }
+    return {isAuthenticated, user, login, logout}
 
 }

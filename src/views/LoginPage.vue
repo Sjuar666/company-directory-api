@@ -1,34 +1,17 @@
 <template>
-  <div class="flex justify-center items-center min-h-screen bg-black">
-    <form class="bg-gray-800 p-10 shadow-md rounded-lg">
-      <div>
-        <label for="username" class="block mb-2 font-bold text-white">Username</label>
-        <input
-          id="username"
-          v-model="username"
-          type="text"
-          placeholder="Username"
-          class="w-full border border-gray-600 p-2 rounded bg-gray-900 text-white"
-        />
-      </div>
-      <div class="mt-4">
-        <label for="password" class="block mb-2 font-bold text-white">Password</label>
-        <input
-          id="password"
-          v-model="password"
-          type="password"
-          placeholder="Password"
-          class="w-full border border-gray-600 p-2 rounded bg-gray-900 text-white"
-        />
-      </div>
-      <button
-        @click="logUserIn"
-        class="bg-green-500 text-white w-full mt-6 px-4 py-2 rounded hover:bg-green-800 transition-all"
-      >
-        LOGIN
-      </button>
-    </form>
-  </div>
+   <form class="m-10" @submit.prevent>
+    <div>
+        <label for="username" class="block mb-2 font-bold">Username</label>
+        <input id="username" v-model="username" type="text" placeholder="Username">
+    </div>
+        <div>
+        <label for="password" class="block mb-2 font-bold">Password</label>
+        <input id="password" v-model="password" type="password" placeholder="Password">
+    </div>
+
+    <button @click="logUserIn" class="bg-green-500 mt-4 px-4 py-2 hover:bg-green-800 hover:text-white">LOGIN</button>
+
+   </form>
 </template>
 
 <script setup>
