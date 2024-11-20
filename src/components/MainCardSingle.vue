@@ -14,13 +14,13 @@ const props = defineProps({
         required: true,
         default: () => {
             return {
-                _id: "65f1b471c1d4a06a0786c3bc",
-                userName: "jperez",
-                firstName: "Joseph",
-                lastName: "Perez",
-                title: "Computer Science Wizard",
-                quote: "You shall not pass!!",
-                __v: 0,
+        "_id": "673e3e76172be87aa463999a",
+        "userName": "Sjuare",
+        "firstName": "Samuel",
+        "lastName": "Juarez",
+        "title": "Student",
+        "quote": "HELLO!",
+         "__v": 0
             }
         },
     },
